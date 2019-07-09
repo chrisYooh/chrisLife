@@ -1,0 +1,34 @@
+ceramic insulator
+glass insulator
+composite insulator
+wire
+pylon
+FX damper
+FR damper
+FDZ damper
+DB damper
+corona ring
+spacer
+truck
+crane
+car
+ship
+cottage
+town house
+apartment
+building complex
+person
+bird nest
+honeycomb
+construction
+-ceramic insulator
+-glass insulator
+-composite insulator
+-wire
+-pylon
+-FX damper
+-FR damper
+-FDZ damper
+-DB damper
+-corona ring
+-spacer
