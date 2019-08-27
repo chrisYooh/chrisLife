@@ -14,8 +14,15 @@
 #include "optimizer.hpp"
 #include "writeFb.hpp"
 
-#define __ONNX_MODEL_PATH       "/Users/chris/Documents/WorkingCopys/GitHub/Chris_Life/19年8月27日 MNN转模型调试工具/MnnConvertDebug/TestModel/model.onnx"
-#define __MNN_MODEL_PATH        "/Users/chris/Documents/WorkingCopys/GitHub/Chris_Life/19年8月27日 MNN转模型调试工具/MnnConvertDebug/TestModel/model.mnn"
+#include "CYNormalConverter.hpp"
+#include "CYCustomConverter.hpp"
+
+#include "CYMnnJsonDump.hpp"
+
+#define __ONNX_MODEL_PATH               "/Users/chris/Documents/WorkingCopys/GitHub/Chris_Life/19年8月27日 MNN转模型调试工具/MnnConvertDebug/TestModel/model.onnx"
+#define __MNN_MODEL_PATH                "/Users/chris/Documents/WorkingCopys/GitHub/Chris_Life/19年8月27日 MNN转模型调试工具/MnnConvertDebug/TestModel/model.mnn"
+#define __MNN_MODEL_JSON_PATH           "/Users/chris/Documents/WorkingCopys/GitHub/Chris_Life/19年8月27日 MNN转模型调试工具/MnnConvertDebug/TestModel/model.json"
+#define __MNN_MODEL_WEIGHT_JSON_PATH    "/Users/chris/Documents/WorkingCopys/GitHub/Chris_Life/19年8月27日 MNN转模型调试工具/MnnConvertDebug/TestModel/model_weight.json"
 
 int onnx2MNNNet(const std::string inputModel, const std::string bizCode, std::unique_ptr<MNN::NetT>& netT);
 
@@ -45,7 +52,13 @@ int main(int argc, char *argv[]) {
     /* 3 模型转换 onnx --> mnn */
     std::cout << "Start to Convert Other Model Format To MNN Model..." << std::endl;
     std::unique_ptr<MNN::NetT> netT = std::unique_ptr<MNN::NetT>(new MNN::NetT());
-    onnx2MNNNet(modelPath.modelFile, modelPath.bizCode, netT);
+    
+    // mnn官方原始转换代码
+//    onnx2MNNNet(modelPath.modelFile, modelPath.bizCode, netT);
+//    // 定制框架转换代码示例
+//    cyOnnx2MNNNet_normal(modelPath.modelFile, modelPath.bizCode, netT);
+//    // 手动生成模型示例
+//    cyOnnx2MNNNet_custom(modelPath.modelFile, modelPath.bizCode, netT);
     
     /* 4 模型优化 */
     std::cout << "Start to Optimize the MNN Net..." << std::endl;
@@ -54,11 +67,11 @@ int main(int argc, char *argv[]) {
     std::cout << "Converted Done!" << std::endl;
     
     /* 5 模型结构Dump */
-//    std::string model_path = "/Users/chris/Documents/WorkingCopys/GitHub/Chris_Mnn/custom/iOS/models/m_10001/m_10001.mnn";
-//    std::string json_path = "/Users/chris/Documents/WorkingCopys/GitHub/Chris_Mnn/custom/iOS/models/m_10001/m_10001.json";
-//    std::string jweight_path = "/Users/chris/Documents/WorkingCopys/GitHub/Chris_Mnn/custom/iOS/models/m_10001/m_10001_weight.mnn";
-//    gmDumpJson(model_path.c_str(), json_path.c_str(), false);
-//    gmDumpJson(model_path.c_str(), jweight_path.c_str(), true);
+    std::string model_path = "/Users/chris/Documents/WorkingCopys/GitHub/Chris_Mnn/custom/iOS/models/m_10001/m_10001.mnn";
+    std::string json_path = "/Users/chris/Documents/WorkingCopys/GitHub/Chris_Mnn/custom/iOS/models/m_10001/m_10001.json";
+    std::string jweight_path = "/Users/chris/Documents/WorkingCopys/GitHub/Chris_Mnn/custom/iOS/models/m_10001/m_10001_weight.mnn";
+    cyMnnDumpJson(__MNN_MODEL_PATH, __MNN_MODEL_JSON_PATH, false);
+    cyMnnDumpJson(__MNN_MODEL_PATH, __MNN_MODEL_WEIGHT_JSON_PATH, true);
     
     return 0;
 }

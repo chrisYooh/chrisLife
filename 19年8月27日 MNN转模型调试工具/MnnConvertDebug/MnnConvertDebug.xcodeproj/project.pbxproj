@@ -50,6 +50,13 @@
 		833C08932313F18B005BD2CE /* onnx.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 833C08922313F18B005BD2CE /* onnx.pb.cc */; };
 		833C08952313F254005BD2CE /* cli.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08942313F254005BD2CE /* cli.cpp */; };
 		833C08972313F259005BD2CE /* config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08962313F259005BD2CE /* config.cpp */; };
+		833C08EE2314FBAE005BD2CE /* CYCustomConverter_Template.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08EC2314FBAE005BD2CE /* CYCustomConverter_Template.cpp */; };
+		833C08F62314FDD8005BD2CE /* CYConvertLinker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08F42314FDD8005BD2CE /* CYConvertLinker.cpp */; };
+		833C08FB2314FE3E005BD2CE /* CYOpConverter_Base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08F92314FE3E005BD2CE /* CYOpConverter_Base.cpp */; };
+		833C08FE2314FE4E005BD2CE /* CYOpCreater.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08FC2314FE4E005BD2CE /* CYOpCreater.cpp */; };
+		833C0903231504F4005BD2CE /* CYMnnJsonDump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C0901231504F4005BD2CE /* CYMnnJsonDump.cpp */; };
+		833C09062315068A005BD2CE /* CYNormalConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C09042315068A005BD2CE /* CYNormalConverter.cpp */; };
+		833C090A231506A5005BD2CE /* CYCustomConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C0908231506A5005BD2CE /* CYCustomConverter.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -116,6 +123,23 @@
 		833C08922313F18B005BD2CE /* onnx.pb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = onnx.pb.cc; path = ../../MNN/tools/converter/build/source/onnx/onnx.pb.cc; sourceTree = "<group>"; };
 		833C08942313F254005BD2CE /* cli.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cli.cpp; path = ../../MNN/tools/converter/source/cli.cpp; sourceTree = "<group>"; };
 		833C08962313F259005BD2CE /* config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = config.cpp; path = ../../MNN/tools/converter/source/config.cpp; sourceTree = "<group>"; };
+		833C08EB2314FA32005BD2CE /* CYConverterPch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYConverterPch.h; sourceTree = "<group>"; };
+		833C08EC2314FBAE005BD2CE /* CYCustomConverter_Template.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CYCustomConverter_Template.cpp; sourceTree = "<group>"; };
+		833C08ED2314FBAE005BD2CE /* CYCustomConverter_Template.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CYCustomConverter_Template.hpp; sourceTree = "<group>"; };
+		833C08F02314FC66005BD2CE /* CYCustomConverterFrame.code */ = {isa = PBXFileReference; lastKnownFileType = text; path = CYCustomConverterFrame.code; sourceTree = "<group>"; };
+		833C08F22314FD92005BD2CE /* CYConvertTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYConvertTool.h; sourceTree = "<group>"; };
+		833C08F42314FDD8005BD2CE /* CYConvertLinker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CYConvertLinker.cpp; sourceTree = "<group>"; };
+		833C08F52314FDD8005BD2CE /* CYConvertLinker.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CYConvertLinker.hpp; sourceTree = "<group>"; };
+		833C08F92314FE3E005BD2CE /* CYOpConverter_Base.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CYOpConverter_Base.cpp; sourceTree = "<group>"; };
+		833C08FA2314FE3E005BD2CE /* CYOpConverter_Base.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CYOpConverter_Base.hpp; sourceTree = "<group>"; };
+		833C08FC2314FE4E005BD2CE /* CYOpCreater.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CYOpCreater.cpp; sourceTree = "<group>"; };
+		833C08FD2314FE4E005BD2CE /* CYOpCreater.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CYOpCreater.hpp; sourceTree = "<group>"; };
+		833C0901231504F4005BD2CE /* CYMnnJsonDump.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CYMnnJsonDump.cpp; sourceTree = "<group>"; };
+		833C0902231504F4005BD2CE /* CYMnnJsonDump.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CYMnnJsonDump.hpp; sourceTree = "<group>"; };
+		833C09042315068A005BD2CE /* CYNormalConverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CYNormalConverter.cpp; sourceTree = "<group>"; };
+		833C09052315068A005BD2CE /* CYNormalConverter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CYNormalConverter.hpp; sourceTree = "<group>"; };
+		833C0908231506A5005BD2CE /* CYCustomConverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CYCustomConverter.cpp; sourceTree = "<group>"; };
+		833C0909231506A5005BD2CE /* CYCustomConverter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CYCustomConverter.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +157,7 @@
 		833C07BB2313DD20005BD2CE = {
 			isa = PBXGroup;
 			children = (
+				833C08E62314F91F005BD2CE /* Custom */,
 				833C08342313E491005BD2CE /* ConverterRef */,
 				833C07C62313DD20005BD2CE /* MnnConvertDebug */,
 				833C07C52313DD20005BD2CE /* Products */,
@@ -255,6 +280,102 @@
 			path = ../../MNN/tools/converter/source/onnx;
 			sourceTree = "<group>";
 		};
+		833C08E62314F91F005BD2CE /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				833C08E72314F933005BD2CE /* Template */,
+				833C08E82314F943005BD2CE /* Converters */,
+				833C08E92314F94D005BD2CE /* Tools */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		833C08E72314F933005BD2CE /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				833C08EB2314FA32005BD2CE /* CYConverterPch.h */,
+				833C08ED2314FBAE005BD2CE /* CYCustomConverter_Template.hpp */,
+				833C08EC2314FBAE005BD2CE /* CYCustomConverter_Template.cpp */,
+				833C08F02314FC66005BD2CE /* CYCustomConverterFrame.code */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		833C08E82314F943005BD2CE /* Converters */ = {
+			isa = PBXGroup;
+			children = (
+				833C08FF2315046F005BD2CE /* Normal */,
+				833C090723150693005BD2CE /* Custom */,
+			);
+			path = Converters;
+			sourceTree = "<group>";
+		};
+		833C08E92314F94D005BD2CE /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				833C08F22314FD92005BD2CE /* CYConvertTool.h */,
+				833C0900231504A5005BD2CE /* JsonDump */,
+				833C08F32314FDB7005BD2CE /* Linker */,
+				833C08F72314FDF3005BD2CE /* OpConverter */,
+				833C08F82314FE0C005BD2CE /* OpCreater */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		833C08F32314FDB7005BD2CE /* Linker */ = {
+			isa = PBXGroup;
+			children = (
+				833C08F52314FDD8005BD2CE /* CYConvertLinker.hpp */,
+				833C08F42314FDD8005BD2CE /* CYConvertLinker.cpp */,
+			);
+			path = Linker;
+			sourceTree = "<group>";
+		};
+		833C08F72314FDF3005BD2CE /* OpConverter */ = {
+			isa = PBXGroup;
+			children = (
+				833C08FA2314FE3E005BD2CE /* CYOpConverter_Base.hpp */,
+				833C08F92314FE3E005BD2CE /* CYOpConverter_Base.cpp */,
+			);
+			path = OpConverter;
+			sourceTree = "<group>";
+		};
+		833C08F82314FE0C005BD2CE /* OpCreater */ = {
+			isa = PBXGroup;
+			children = (
+				833C08FD2314FE4E005BD2CE /* CYOpCreater.hpp */,
+				833C08FC2314FE4E005BD2CE /* CYOpCreater.cpp */,
+			);
+			path = OpCreater;
+			sourceTree = "<group>";
+		};
+		833C08FF2315046F005BD2CE /* Normal */ = {
+			isa = PBXGroup;
+			children = (
+				833C09052315068A005BD2CE /* CYNormalConverter.hpp */,
+				833C09042315068A005BD2CE /* CYNormalConverter.cpp */,
+			);
+			path = Normal;
+			sourceTree = "<group>";
+		};
+		833C0900231504A5005BD2CE /* JsonDump */ = {
+			isa = PBXGroup;
+			children = (
+				833C0902231504F4005BD2CE /* CYMnnJsonDump.hpp */,
+				833C0901231504F4005BD2CE /* CYMnnJsonDump.cpp */,
+			);
+			path = JsonDump;
+			sourceTree = "<group>";
+		};
+		833C090723150693005BD2CE /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				833C0909231506A5005BD2CE /* CYCustomConverter.hpp */,
+				833C0908231506A5005BD2CE /* CYCustomConverter.cpp */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -316,11 +437,14 @@
 				833C08852313E533005BD2CE /* ShapeOnnx.cpp in Sources */,
 				833C08872313E533005BD2CE /* TransposeOnnx.cpp in Sources */,
 				833C088E2313E533005BD2CE /* SigmoidOnnx.cpp in Sources */,
+				833C08FB2314FE3E005BD2CE /* CYOpConverter_Base.cpp in Sources */,
 				833C08422313E4E2005BD2CE /* addBizCode.cpp in Sources */,
 				833C08882313E533005BD2CE /* Clip.cpp in Sources */,
 				833C08842313E533005BD2CE /* ReduceOnnx.cpp in Sources */,
 				833C088B2313E533005BD2CE /* PadOnnx.cpp in Sources */,
 				833C088D2313E533005BD2CE /* PoolingOnnx.cpp in Sources */,
+				833C08EE2314FBAE005BD2CE /* CYCustomConverter_Template.cpp in Sources */,
+				833C090A231506A5005BD2CE /* CYCustomConverter.cpp in Sources */,
 				833C08722313E533005BD2CE /* ConvolutionOnnx.cpp in Sources */,
 				833C087B2313E533005BD2CE /* SqueezeOnnx.cpp in Sources */,
 				833C08952313F254005BD2CE /* cli.cpp in Sources */,
@@ -328,6 +452,8 @@
 				833C08732313E533005BD2CE /* onnx-operators.proto in Sources */,
 				833C08752313E533005BD2CE /* onnxOpConverter.cpp in Sources */,
 				833C08832313E533005BD2CE /* MatMulOnnx.cpp in Sources */,
+				833C08FE2314FE4E005BD2CE /* CYOpCreater.cpp in Sources */,
+				833C08F62314FDD8005BD2CE /* CYConvertLinker.cpp in Sources */,
 				833C087A2313E533005BD2CE /* UnaryOpOnnx.cpp in Sources */,
 				833C083E2313E4BD005BD2CE /* PostTreatUtils.cpp in Sources */,
 				833C088C2313E533005BD2CE /* CosineSimilarityOnnx.cpp in Sources */,
@@ -342,6 +468,7 @@
 				833C07C82313DD20005BD2CE /* main.mm in Sources */,
 				833C08762313E533005BD2CE /* SoftmaxOnnx.cpp in Sources */,
 				833C088A2313E533005BD2CE /* FlattenOnnx.cpp in Sources */,
+				833C09062315068A005BD2CE /* CYNormalConverter.cpp in Sources */,
 				833C088F2313E533005BD2CE /* BatchNormalizationOnnx.cpp in Sources */,
 				833C08372313E4AA005BD2CE /* writeFb.cpp in Sources */,
 				833C087D2313E533005BD2CE /* UpsampleOnnx.cpp in Sources */,
@@ -351,6 +478,7 @@
 				833C08782313E533005BD2CE /* OnnxUtils.cpp in Sources */,
 				833C08702313E533005BD2CE /* ReluOnnx.cpp in Sources */,
 				833C08902313E533005BD2CE /* onnx-ml.proto in Sources */,
+				833C0903231504F4005BD2CE /* CYMnnJsonDump.cpp in Sources */,
 				833C087F2313E533005BD2CE /* onnx-operators-ml.proto in Sources */,
 				833C087C2313E533005BD2CE /* UnSqueezeOnnx.cpp in Sources */,
 			);
@@ -476,6 +604,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67KFM65GB3;
 				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Custom/Template",
 					"$(PROJECT_DIR)/../MNN/tools/converter/build",
 					"$(PROJECT_DIR)/../MNN/tools/converter/build/source/onnx",
 					"$(PROJECT_DIR)/../MNN/tools/converter/source",
@@ -501,6 +630,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67KFM65GB3;
 				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Custom/Template",
 					"$(PROJECT_DIR)/../MNN/tools/converter/build",
 					"$(PROJECT_DIR)/../MNN/tools/converter/build/source/onnx",
 					"$(PROJECT_DIR)/../MNN/tools/converter/source",
