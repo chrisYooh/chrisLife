@@ -90,21 +90,21 @@ static int __custom_convert_op(std::unique_ptr<MNN::NetT>& netT,                
     // 获取节点名称
     const auto& name = onnxNode.output(0);
     
-    /* 示例1：
-     * 特定节点手动转换，返回 1
-     */
-    if (name == __KEY_MANUAL) {
-        MNN::OpT* MNNOp = __create_op_xxx(onnxNode, all_weight);
-        CY_INSERT_OP(__KEY_MANUAL);
-        return 1;
-    }
-    
-    /* 示例2：
-     * 特定节点不进行转换，直接跳过，返回 2
-     */
-    if (name == __KEY_JUMP) {
-        return 2;
-    }
+//    /* 示例1：
+//     * 特定节点手动转换，返回 1
+//     */
+//    if (name == __KEY_MANUAL) {
+//        MNN::OpT* MNNOp = __create_op_xxx(onnxNode, all_weight);
+//        CY_INSERT_OP(__KEY_MANUAL);
+//        return 1;
+//    }
+//
+//    /* 示例2：
+//     * 特定节点不进行转换，直接跳过，返回 2
+//     */
+//    if (name == __KEY_JUMP) {
+//        return 2;
+//    }
 
     // 全人工处理逻辑
     if (nodeIndex <= __MANUAL_TAG) {
@@ -118,10 +118,6 @@ static int __custom_convert_op(std::unique_ptr<MNN::NetT>& netT,                
  * Return 0:自动链接；1:人工链接
  */
 static bool __custom_tensor_link(std::unique_ptr<MNN::OpT> &op, std::map<std::string, int> &tensorsName, std::string &name) {
-    
-    /* 示例：手工构建 __KEY_INPUT --> __KEY_MANUAL --> __KEY_JUMP 三层网络 */
-    CY_TENSOR_LINK_1(__KEY_MANUAL, __KEY_INPUT);
-    CY_TENSOR_LINK_1(__KEY_JUMP, __KEY_MANUAL);
     
     return false;
 }
