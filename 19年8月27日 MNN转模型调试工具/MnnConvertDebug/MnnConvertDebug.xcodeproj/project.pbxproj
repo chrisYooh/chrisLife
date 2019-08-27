@@ -170,10 +170,10 @@
 				833C08922313F18B005BD2CE /* onnx.pb.cc */,
 				833C08942313F254005BD2CE /* cli.cpp */,
 				833C08962313F259005BD2CE /* config.cpp */,
-				833C08492313E533005BD2CE /* onnx */,
 				833C083F2313E4E2005BD2CE /* MNN */,
 				833C08382313E4BD005BD2CE /* optimizer */,
 				833C08352313E4AA005BD2CE /* common */,
+				833C08492313E533005BD2CE /* onnx */,
 			);
 			path = ConverterRef;
 			sourceTree = "<group>";

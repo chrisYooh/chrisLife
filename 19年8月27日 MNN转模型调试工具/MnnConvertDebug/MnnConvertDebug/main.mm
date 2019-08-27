@@ -14,8 +14,8 @@
 #include "optimizer.hpp"
 #include "writeFb.hpp"
 
-#define __ONNX_MODEL_PATH       "....../model.onnx"
-#define __MNN_MODEL_PATH        "....../model.mnn"
+#define __ONNX_MODEL_PATH       "/Users/chris/Documents/WorkingCopys/GitHub/Chris_Life/19年8月27日 MNN转模型调试工具/MnnConvertDebug/TestModel/model.onnx"
+#define __MNN_MODEL_PATH        "/Users/chris/Documents/WorkingCopys/GitHub/Chris_Life/19年8月27日 MNN转模型调试工具/MnnConvertDebug/TestModel/model.mnn"
 
 int onnx2MNNNet(const std::string inputModel, const std::string bizCode, std::unique_ptr<MNN::NetT>& netT);
 
