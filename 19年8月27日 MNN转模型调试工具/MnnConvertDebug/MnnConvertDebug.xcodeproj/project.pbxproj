@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		833C07C82313DD20005BD2CE /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 833C07C72313DD20005BD2CE /* main.mm */; };
+		833C07D02313E0A3005BD2CE /* libprotobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 833C07CF2313E0A3005BD2CE /* libprotobuf.a */; };
+		833C08372313E4AA005BD2CE /* writeFb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08362313E4AA005BD2CE /* writeFb.cpp */; };
+		833C083D2313E4BD005BD2CE /* optimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08392313E4BD005BD2CE /* optimizer.cpp */; };
+		833C083E2313E4BD005BD2CE /* PostTreatUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C083B2313E4BD005BD2CE /* PostTreatUtils.cpp */; };
+		833C08422313E4E2005BD2CE /* addBizCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08412313E4E2005BD2CE /* addBizCode.cpp */; };
+		833C08702313E533005BD2CE /* ReluOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C084A2313E533005BD2CE /* ReluOnnx.cpp */; };
+		833C08712313E533005BD2CE /* ReshapeOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C084B2313E533005BD2CE /* ReshapeOnnx.cpp */; };
+		833C08722313E533005BD2CE /* ConvolutionOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C084C2313E533005BD2CE /* ConvolutionOnnx.cpp */; };
+		833C08732313E533005BD2CE /* onnx-operators.proto in Sources */ = {isa = PBXBuildFile; fileRef = 833C084E2313E533005BD2CE /* onnx-operators.proto */; };
+		833C08742313E533005BD2CE /* onnx.proto in Sources */ = {isa = PBXBuildFile; fileRef = 833C084F2313E533005BD2CE /* onnx.proto */; };
+		833C08752313E533005BD2CE /* onnxOpConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08502313E533005BD2CE /* onnxOpConverter.cpp */; };
+		833C08762313E533005BD2CE /* SoftmaxOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08512313E533005BD2CE /* SoftmaxOnnx.cpp */; };
+		833C08772313E533005BD2CE /* BinaryOpOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08522313E533005BD2CE /* BinaryOpOnnx.cpp */; };
+		833C08782313E533005BD2CE /* OnnxUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08532313E533005BD2CE /* OnnxUtils.cpp */; };
+		833C08792313E533005BD2CE /* ConstantOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08552313E533005BD2CE /* ConstantOnnx.cpp */; };
+		833C087A2313E533005BD2CE /* UnaryOpOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08562313E533005BD2CE /* UnaryOpOnnx.cpp */; };
+		833C087B2313E533005BD2CE /* SqueezeOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08572313E533005BD2CE /* SqueezeOnnx.cpp */; };
+		833C087C2313E533005BD2CE /* UnSqueezeOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08582313E533005BD2CE /* UnSqueezeOnnx.cpp */; };
+		833C087D2313E533005BD2CE /* UpsampleOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08592313E533005BD2CE /* UpsampleOnnx.cpp */; };
+		833C087E2313E533005BD2CE /* GatherOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C085A2313E533005BD2CE /* GatherOnnx.cpp */; };
+		833C087F2313E533005BD2CE /* onnx-operators-ml.proto in Sources */ = {isa = PBXBuildFile; fileRef = 833C085B2313E533005BD2CE /* onnx-operators-ml.proto */; };
+		833C08802313E533005BD2CE /* onnxConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C085C2313E533005BD2CE /* onnxConverter.cpp */; };
+		833C08812313E533005BD2CE /* TileOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C085D2313E533005BD2CE /* TileOnnx.cpp */; };
+		833C08822313E533005BD2CE /* LRNOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C085E2313E533005BD2CE /* LRNOnnx.cpp */; };
+		833C08832313E533005BD2CE /* MatMulOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C085F2313E533005BD2CE /* MatMulOnnx.cpp */; };
+		833C08842313E533005BD2CE /* ReduceOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08602313E533005BD2CE /* ReduceOnnx.cpp */; };
+		833C08852313E533005BD2CE /* ShapeOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08612313E533005BD2CE /* ShapeOnnx.cpp */; };
+		833C08862313E533005BD2CE /* ConcatOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08622313E533005BD2CE /* ConcatOnnx.cpp */; };
+		833C08872313E533005BD2CE /* TransposeOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08632313E533005BD2CE /* TransposeOnnx.cpp */; };
+		833C08882313E533005BD2CE /* Clip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08642313E533005BD2CE /* Clip.cpp */; };
+		833C08892313E533005BD2CE /* SliceOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08652313E533005BD2CE /* SliceOnnx.cpp */; };
+		833C088A2313E533005BD2CE /* FlattenOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08662313E533005BD2CE /* FlattenOnnx.cpp */; };
+		833C088B2313E533005BD2CE /* PadOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08672313E533005BD2CE /* PadOnnx.cpp */; };
+		833C088C2313E533005BD2CE /* CosineSimilarityOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08682313E533005BD2CE /* CosineSimilarityOnnx.cpp */; };
+		833C088D2313E533005BD2CE /* PoolingOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08692313E533005BD2CE /* PoolingOnnx.cpp */; };
+		833C088E2313E533005BD2CE /* SigmoidOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C086A2313E533005BD2CE /* SigmoidOnnx.cpp */; };
+		833C088F2313E533005BD2CE /* BatchNormalizationOnnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C086C2313E533005BD2CE /* BatchNormalizationOnnx.cpp */; };
+		833C08902313E533005BD2CE /* onnx-ml.proto in Sources */ = {isa = PBXBuildFile; fileRef = 833C086E2313E533005BD2CE /* onnx-ml.proto */; };
+		833C08912313E533005BD2CE /* OnnxTmpGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C086F2313E533005BD2CE /* OnnxTmpGraph.cpp */; };
+		833C08932313F18B005BD2CE /* onnx.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 833C08922313F18B005BD2CE /* onnx.pb.cc */; };
+		833C08952313F254005BD2CE /* cli.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08942313F254005BD2CE /* cli.cpp */; };
+		833C08972313F259005BD2CE /* config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 833C08962313F259005BD2CE /* config.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		833C07C22313DD20005BD2CE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		833C07C42313DD20005BD2CE /* MnnConvertDebug */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MnnConvertDebug; sourceTree = BUILT_PRODUCTS_DIR; };
+		833C07C72313DD20005BD2CE /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		833C07CF2313E0A3005BD2CE /* libprotobuf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprotobuf.a; path = ../../../../../../usr/local/Cellar/protobuf/3.7.1/lib/libprotobuf.a; sourceTree = "<group>"; };
+		833C08362313E4AA005BD2CE /* writeFb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = writeFb.cpp; sourceTree = "<group>"; };
+		833C08392313E4BD005BD2CE /* optimizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = optimizer.cpp; sourceTree = "<group>"; };
+		833C083A2313E4BD005BD2CE /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		833C083B2313E4BD005BD2CE /* PostTreatUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PostTreatUtils.cpp; sourceTree = "<group>"; };
+		833C083C2313E4BD005BD2CE /* PostTreatUtils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PostTreatUtils.hpp; sourceTree = "<group>"; };
+		833C08402313E4E2005BD2CE /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		833C08412313E4E2005BD2CE /* addBizCode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = addBizCode.cpp; sourceTree = "<group>"; };
+		833C084A2313E533005BD2CE /* ReluOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReluOnnx.cpp; sourceTree = "<group>"; };
+		833C084B2313E533005BD2CE /* ReshapeOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReshapeOnnx.cpp; sourceTree = "<group>"; };
+		833C084C2313E533005BD2CE /* ConvolutionOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvolutionOnnx.cpp; sourceTree = "<group>"; };
+		833C084D2313E533005BD2CE /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		833C084E2313E533005BD2CE /* onnx-operators.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = "onnx-operators.proto"; sourceTree = "<group>"; };
+		833C084F2313E533005BD2CE /* onnx.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = onnx.proto; sourceTree = "<group>"; };
+		833C08502313E533005BD2CE /* onnxOpConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = onnxOpConverter.cpp; sourceTree = "<group>"; };
+		833C08512313E533005BD2CE /* SoftmaxOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SoftmaxOnnx.cpp; sourceTree = "<group>"; };
+		833C08522313E533005BD2CE /* BinaryOpOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryOpOnnx.cpp; sourceTree = "<group>"; };
+		833C08532313E533005BD2CE /* OnnxUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OnnxUtils.cpp; sourceTree = "<group>"; };
+		833C08542313E533005BD2CE /* OnnxTmpGraph.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OnnxTmpGraph.hpp; sourceTree = "<group>"; };
+		833C08552313E533005BD2CE /* ConstantOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConstantOnnx.cpp; sourceTree = "<group>"; };
+		833C08562313E533005BD2CE /* UnaryOpOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnaryOpOnnx.cpp; sourceTree = "<group>"; };
+		833C08572313E533005BD2CE /* SqueezeOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SqueezeOnnx.cpp; sourceTree = "<group>"; };
+		833C08582313E533005BD2CE /* UnSqueezeOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnSqueezeOnnx.cpp; sourceTree = "<group>"; };
+		833C08592313E533005BD2CE /* UpsampleOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UpsampleOnnx.cpp; sourceTree = "<group>"; };
+		833C085A2313E533005BD2CE /* GatherOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GatherOnnx.cpp; sourceTree = "<group>"; };
+		833C085B2313E533005BD2CE /* onnx-operators-ml.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = "onnx-operators-ml.proto"; sourceTree = "<group>"; };
+		833C085C2313E533005BD2CE /* onnxConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = onnxConverter.cpp; sourceTree = "<group>"; };
+		833C085D2313E533005BD2CE /* TileOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TileOnnx.cpp; sourceTree = "<group>"; };
+		833C085E2313E533005BD2CE /* LRNOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LRNOnnx.cpp; sourceTree = "<group>"; };
+		833C085F2313E533005BD2CE /* MatMulOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MatMulOnnx.cpp; sourceTree = "<group>"; };
+		833C08602313E533005BD2CE /* ReduceOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReduceOnnx.cpp; sourceTree = "<group>"; };
+		833C08612313E533005BD2CE /* ShapeOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShapeOnnx.cpp; sourceTree = "<group>"; };
+		833C08622313E533005BD2CE /* ConcatOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConcatOnnx.cpp; sourceTree = "<group>"; };
+		833C08632313E533005BD2CE /* TransposeOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TransposeOnnx.cpp; sourceTree = "<group>"; };
+		833C08642313E533005BD2CE /* Clip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Clip.cpp; sourceTree = "<group>"; };
+		833C08652313E533005BD2CE /* SliceOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SliceOnnx.cpp; sourceTree = "<group>"; };
+		833C08662313E533005BD2CE /* FlattenOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FlattenOnnx.cpp; sourceTree = "<group>"; };
+		833C08672313E533005BD2CE /* PadOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PadOnnx.cpp; sourceTree = "<group>"; };
+		833C08682313E533005BD2CE /* CosineSimilarityOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CosineSimilarityOnnx.cpp; sourceTree = "<group>"; };
+		833C08692313E533005BD2CE /* PoolingOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PoolingOnnx.cpp; sourceTree = "<group>"; };
+		833C086A2313E533005BD2CE /* SigmoidOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SigmoidOnnx.cpp; sourceTree = "<group>"; };
+		833C086B2313E533005BD2CE /* onnxOpConverter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = onnxOpConverter.hpp; sourceTree = "<group>"; };
+		833C086C2313E533005BD2CE /* BatchNormalizationOnnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BatchNormalizationOnnx.cpp; sourceTree = "<group>"; };
+		833C086D2313E533005BD2CE /* OnnxUtils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OnnxUtils.hpp; sourceTree = "<group>"; };
+		833C086E2313E533005BD2CE /* onnx-ml.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = "onnx-ml.proto"; sourceTree = "<group>"; };
+		833C086F2313E533005BD2CE /* OnnxTmpGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OnnxTmpGraph.cpp; sourceTree = "<group>"; };
+		833C08922313F18B005BD2CE /* onnx.pb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = onnx.pb.cc; path = ../../MNN/tools/converter/build/source/onnx/onnx.pb.cc; sourceTree = "<group>"; };
+		833C08942313F254005BD2CE /* cli.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cli.cpp; path = ../../MNN/tools/converter/source/cli.cpp; sourceTree = "<group>"; };
+		833C08962313F259005BD2CE /* config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = config.cpp; path = ../../MNN/tools/converter/source/config.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		833C07C12313DD20005BD2CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				833C07D02313E0A3005BD2CE /* libprotobuf.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		833C07BB2313DD20005BD2CE = {
+			isa = PBXGroup;
+			children = (
+				833C08342313E491005BD2CE /* ConverterRef */,
+				833C07C62313DD20005BD2CE /* MnnConvertDebug */,
+				833C07C52313DD20005BD2CE /* Products */,
+				833C07CE2313E0A3005BD2CE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		833C07C52313DD20005BD2CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				833C07C42313DD20005BD2CE /* MnnConvertDebug */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		833C07C62313DD20005BD2CE /* MnnConvertDebug */ = {
+			isa = PBXGroup;
+			children = (
+				833C07C72313DD20005BD2CE /* main.mm */,
+			);
+			path = MnnConvertDebug;
+			sourceTree = "<group>";
+		};
+		833C07CE2313E0A3005BD2CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				833C07CF2313E0A3005BD2CE /* libprotobuf.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		833C08342313E491005BD2CE /* ConverterRef */ = {
+			isa = PBXGroup;
+			children = (
+				833C08922313F18B005BD2CE /* onnx.pb.cc */,
+				833C08942313F254005BD2CE /* cli.cpp */,
+				833C08962313F259005BD2CE /* config.cpp */,
+				833C08492313E533005BD2CE /* onnx */,
+				833C083F2313E4E2005BD2CE /* MNN */,
+				833C08382313E4BD005BD2CE /* optimizer */,
+				833C08352313E4AA005BD2CE /* common */,
+			);
+			path = ConverterRef;
+			sourceTree = "<group>";
+		};
+		833C08352313E4AA005BD2CE /* common */ = {
+			isa = PBXGroup;
+			children = (
+				833C08362313E4AA005BD2CE /* writeFb.cpp */,
+			);
+			name = common;
+			path = ../../MNN/tools/converter/source/common;
+			sourceTree = "<group>";
+		};
+		833C08382313E4BD005BD2CE /* optimizer */ = {
+			isa = PBXGroup;
+			children = (
+				833C08392313E4BD005BD2CE /* optimizer.cpp */,
+				833C083A2313E4BD005BD2CE /* CMakeLists.txt */,
+				833C083B2313E4BD005BD2CE /* PostTreatUtils.cpp */,
+				833C083C2313E4BD005BD2CE /* PostTreatUtils.hpp */,
+			);
+			name = optimizer;
+			path = ../../MNN/tools/converter/source/optimizer;
+			sourceTree = "<group>";
+		};
+		833C083F2313E4E2005BD2CE /* MNN */ = {
+			isa = PBXGroup;
+			children = (
+				833C08402313E4E2005BD2CE /* CMakeLists.txt */,
+				833C08412313E4E2005BD2CE /* addBizCode.cpp */,
+			);
+			name = MNN;
+			path = ../../MNN/tools/converter/source/MNN;
+			sourceTree = "<group>";
+		};
+		833C08492313E533005BD2CE /* onnx */ = {
+			isa = PBXGroup;
+			children = (
+				833C084A2313E533005BD2CE /* ReluOnnx.cpp */,
+				833C084B2313E533005BD2CE /* ReshapeOnnx.cpp */,
+				833C084C2313E533005BD2CE /* ConvolutionOnnx.cpp */,
+				833C084D2313E533005BD2CE /* CMakeLists.txt */,
+				833C084E2313E533005BD2CE /* onnx-operators.proto */,
+				833C084F2313E533005BD2CE /* onnx.proto */,
+				833C08502313E533005BD2CE /* onnxOpConverter.cpp */,
+				833C08512313E533005BD2CE /* SoftmaxOnnx.cpp */,
+				833C08522313E533005BD2CE /* BinaryOpOnnx.cpp */,
+				833C08532313E533005BD2CE /* OnnxUtils.cpp */,
+				833C08542313E533005BD2CE /* OnnxTmpGraph.hpp */,
+				833C08552313E533005BD2CE /* ConstantOnnx.cpp */,
+				833C08562313E533005BD2CE /* UnaryOpOnnx.cpp */,
+				833C08572313E533005BD2CE /* SqueezeOnnx.cpp */,
+				833C08582313E533005BD2CE /* UnSqueezeOnnx.cpp */,
+				833C08592313E533005BD2CE /* UpsampleOnnx.cpp */,
+				833C085A2313E533005BD2CE /* GatherOnnx.cpp */,
+				833C085B2313E533005BD2CE /* onnx-operators-ml.proto */,
+				833C085C2313E533005BD2CE /* onnxConverter.cpp */,
+				833C085D2313E533005BD2CE /* TileOnnx.cpp */,
+				833C085E2313E533005BD2CE /* LRNOnnx.cpp */,
+				833C085F2313E533005BD2CE /* MatMulOnnx.cpp */,
+				833C08602313E533005BD2CE /* ReduceOnnx.cpp */,
+				833C08612313E533005BD2CE /* ShapeOnnx.cpp */,
+				833C08622313E533005BD2CE /* ConcatOnnx.cpp */,
+				833C08632313E533005BD2CE /* TransposeOnnx.cpp */,
+				833C08642313E533005BD2CE /* Clip.cpp */,
+				833C08652313E533005BD2CE /* SliceOnnx.cpp */,
+				833C08662313E533005BD2CE /* FlattenOnnx.cpp */,
+				833C08672313E533005BD2CE /* PadOnnx.cpp */,
+				833C08682313E533005BD2CE /* CosineSimilarityOnnx.cpp */,
+				833C08692313E533005BD2CE /* PoolingOnnx.cpp */,
+				833C086A2313E533005BD2CE /* SigmoidOnnx.cpp */,
+				833C086B2313E533005BD2CE /* onnxOpConverter.hpp */,
+				833C086C2313E533005BD2CE /* BatchNormalizationOnnx.cpp */,
+				833C086D2313E533005BD2CE /* OnnxUtils.hpp */,
+				833C086E2313E533005BD2CE /* onnx-ml.proto */,
+				833C086F2313E533005BD2CE /* OnnxTmpGraph.cpp */,
+			);
+			name = onnx;
+			path = ../../MNN/tools/converter/source/onnx;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		833C07C32313DD20005BD2CE /* MnnConvertDebug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 833C07CB2313DD20005BD2CE /* Build configuration list for PBXNativeTarget "MnnConvertDebug" */;
+			buildPhases = (
+				833C07C02313DD20005BD2CE /* Sources */,
+				833C07C12313DD20005BD2CE /* Frameworks */,
+				833C07C22313DD20005BD2CE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MnnConvertDebug;
+			productName = MnnConvertDebug;
+			productReference = 833C07C42313DD20005BD2CE /* MnnConvertDebug */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		833C07BC2313DD20005BD2CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Chris;
+				TargetAttributes = {
+					833C07C32313DD20005BD2CE = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 833C07BF2313DD20005BD2CE /* Build configuration list for PBXProject "MnnConvertDebug" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 833C07BB2313DD20005BD2CE;
+			productRefGroup = 833C07C52313DD20005BD2CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				833C07C32313DD20005BD2CE /* MnnConvertDebug */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		833C07C02313DD20005BD2CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				833C08792313E533005BD2CE /* ConstantOnnx.cpp in Sources */,
+				833C087E2313E533005BD2CE /* GatherOnnx.cpp in Sources */,
+				833C08852313E533005BD2CE /* ShapeOnnx.cpp in Sources */,
+				833C08872313E533005BD2CE /* TransposeOnnx.cpp in Sources */,
+				833C088E2313E533005BD2CE /* SigmoidOnnx.cpp in Sources */,
+				833C08422313E4E2005BD2CE /* addBizCode.cpp in Sources */,
+				833C08882313E533005BD2CE /* Clip.cpp in Sources */,
+				833C08842313E533005BD2CE /* ReduceOnnx.cpp in Sources */,
+				833C088B2313E533005BD2CE /* PadOnnx.cpp in Sources */,
+				833C088D2313E533005BD2CE /* PoolingOnnx.cpp in Sources */,
+				833C08722313E533005BD2CE /* ConvolutionOnnx.cpp in Sources */,
+				833C087B2313E533005BD2CE /* SqueezeOnnx.cpp in Sources */,
+				833C08952313F254005BD2CE /* cli.cpp in Sources */,
+				833C08712313E533005BD2CE /* ReshapeOnnx.cpp in Sources */,
+				833C08732313E533005BD2CE /* onnx-operators.proto in Sources */,
+				833C08752313E533005BD2CE /* onnxOpConverter.cpp in Sources */,
+				833C08832313E533005BD2CE /* MatMulOnnx.cpp in Sources */,
+				833C087A2313E533005BD2CE /* UnaryOpOnnx.cpp in Sources */,
+				833C083E2313E4BD005BD2CE /* PostTreatUtils.cpp in Sources */,
+				833C088C2313E533005BD2CE /* CosineSimilarityOnnx.cpp in Sources */,
+				833C08822313E533005BD2CE /* LRNOnnx.cpp in Sources */,
+				833C08772313E533005BD2CE /* BinaryOpOnnx.cpp in Sources */,
+				833C08742313E533005BD2CE /* onnx.proto in Sources */,
+				833C08972313F259005BD2CE /* config.cpp in Sources */,
+				833C08812313E533005BD2CE /* TileOnnx.cpp in Sources */,
+				833C08912313E533005BD2CE /* OnnxTmpGraph.cpp in Sources */,
+				833C08862313E533005BD2CE /* ConcatOnnx.cpp in Sources */,
+				833C08802313E533005BD2CE /* onnxConverter.cpp in Sources */,
+				833C07C82313DD20005BD2CE /* main.mm in Sources */,
+				833C08762313E533005BD2CE /* SoftmaxOnnx.cpp in Sources */,
+				833C088A2313E533005BD2CE /* FlattenOnnx.cpp in Sources */,
+				833C088F2313E533005BD2CE /* BatchNormalizationOnnx.cpp in Sources */,
+				833C08372313E4AA005BD2CE /* writeFb.cpp in Sources */,
+				833C087D2313E533005BD2CE /* UpsampleOnnx.cpp in Sources */,
+				833C083D2313E4BD005BD2CE /* optimizer.cpp in Sources */,
+				833C08932313F18B005BD2CE /* onnx.pb.cc in Sources */,
+				833C08892313E533005BD2CE /* SliceOnnx.cpp in Sources */,
+				833C08782313E533005BD2CE /* OnnxUtils.cpp in Sources */,
+				833C08702313E533005BD2CE /* ReluOnnx.cpp in Sources */,
+				833C08902313E533005BD2CE /* onnx-ml.proto in Sources */,
+				833C087F2313E533005BD2CE /* onnx-operators-ml.proto in Sources */,
+				833C087C2313E533005BD2CE /* UnSqueezeOnnx.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		833C07C92313DD20005BD2CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		833C07CA2313DD20005BD2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		833C07CC2313DD20005BD2CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KFM65GB3;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../MNN/tools/converter/build",
+					"$(PROJECT_DIR)/../MNN/tools/converter/build/source/onnx",
+					"$(PROJECT_DIR)/../MNN/tools/converter/source",
+					"$(PROJECT_DIR)/../MNN/tools/converter/source/common",
+					"$(PROJECT_DIR)/../MNN/tools/converter/source/include",
+					"$(PROJECT_DIR)/../MNN/tools/converter/source/IR",
+					"$(PROJECT_DIR)/../MNN/tools/converter/source/MNN",
+					"$(PROJECT_DIR)/../MNN/tools/converter/source/onnx",
+					"$(PROJECT_DIR)/../MNN/tools/converter/source/optimizer",
+					/usr/local/Cellar/protobuf/3.7.1/include/,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/protobuf/3.7.1/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		833C07CD2313DD20005BD2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KFM65GB3;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../MNN/tools/converter/build",
+					"$(PROJECT_DIR)/../MNN/tools/converter/build/source/onnx",
+					"$(PROJECT_DIR)/../MNN/tools/converter/source",
+					"$(PROJECT_DIR)/../MNN/tools/converter/source/common",
+					"$(PROJECT_DIR)/../MNN/tools/converter/source/include",
+					"$(PROJECT_DIR)/../MNN/tools/converter/source/IR",
+					"$(PROJECT_DIR)/../MNN/tools/converter/source/MNN",
+					"$(PROJECT_DIR)/../MNN/tools/converter/source/onnx",
+					"$(PROJECT_DIR)/../MNN/tools/converter/source/optimizer",
+					/usr/local/Cellar/protobuf/3.7.1/include/,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/protobuf/3.7.1/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		833C07BF2313DD20005BD2CE /* Build configuration list for PBXProject "MnnConvertDebug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				833C07C92313DD20005BD2CE /* Debug */,
+				833C07CA2313DD20005BD2CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		833C07CB2313DD20005BD2CE /* Build configuration list for PBXNativeTarget "MnnConvertDebug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				833C07CC2313DD20005BD2CE /* Debug */,
+				833C07CD2313DD20005BD2CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 833C07BC2313DD20005BD2CE /* Project object */;
+}
