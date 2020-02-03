@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8368489623D43DCD00EE3E40 /* NeonTest200119.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8368489423D43DCD00EE3E40 /* NeonTest200119.cpp */; };
+		F2470E82219190E800FF75D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2470E81219190E800FF75D2 /* AppDelegate.m */; };
+		F2470E85219190E800FF75D2 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F2470E84219190E800FF75D2 /* ViewController.mm */; };
+		F2470E88219190E800FF75D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2470E86219190E800FF75D2 /* Main.storyboard */; };
+		F2470E8A219190E900FF75D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2470E89219190E900FF75D2 /* Assets.xcassets */; };
+		F2470E8D219190E900FF75D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2470E8B219190E900FF75D2 /* LaunchScreen.storyboard */; };
+		F2470E90219190E900FF75D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2470E8F219190E900FF75D2 /* main.m */; };
+		F2470E9A219190E900FF75D2 /* NEONTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2470E99219190E900FF75D2 /* NEONTestTests.m */; };
+		F2470EA5219190E900FF75D2 /* NEONTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2470EA4219190E900FF75D2 /* NEONTestUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2470E96219190E900FF75D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2470E75219190E800FF75D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2470E7C219190E800FF75D2;
+			remoteInfo = NEONTest;
+		};
+		F2470EA1219190E900FF75D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2470E75219190E800FF75D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2470E7C219190E800FF75D2;
+			remoteInfo = NEONTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8368489423D43DCD00EE3E40 /* NeonTest200119.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NeonTest200119.cpp; sourceTree = "<group>"; };
+		8368489523D43DCD00EE3E40 /* NeonTest200119.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NeonTest200119.hpp; sourceTree = "<group>"; };
+		F2470E7D219190E800FF75D2 /* NEONTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NEONTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2470E80219190E800FF75D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F2470E81219190E800FF75D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F2470E83219190E800FF75D2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F2470E84219190E800FF75D2 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		F2470E87219190E800FF75D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2470E89219190E900FF75D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2470E8C219190E900FF75D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2470E8E219190E900FF75D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2470E8F219190E900FF75D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2470E95219190E900FF75D2 /* NEONTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NEONTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2470E99219190E900FF75D2 /* NEONTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NEONTestTests.m; sourceTree = "<group>"; };
+		F2470E9B219190E900FF75D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2470EA0219190E900FF75D2 /* NEONTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NEONTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2470EA4219190E900FF75D2 /* NEONTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NEONTestUITests.m; sourceTree = "<group>"; };
+		F2470EA6219190E900FF75D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2470E7A219190E800FF75D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2470E92219190E900FF75D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2470E9D219190E900FF75D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2470E74219190E800FF75D2 = {
+			isa = PBXGroup;
+			children = (
+				8368489523D43DCD00EE3E40 /* NeonTest200119.hpp */,
+				8368489423D43DCD00EE3E40 /* NeonTest200119.cpp */,
+				F2470E7F219190E800FF75D2 /* NEONTest */,
+				F2470E98219190E900FF75D2 /* NEONTestTests */,
+				F2470EA3219190E900FF75D2 /* NEONTestUITests */,
+				F2470E7E219190E800FF75D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2470E7E219190E800FF75D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2470E7D219190E800FF75D2 /* NEONTest.app */,
+				F2470E95219190E900FF75D2 /* NEONTestTests.xctest */,
+				F2470EA0219190E900FF75D2 /* NEONTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2470E7F219190E800FF75D2 /* NEONTest */ = {
+			isa = PBXGroup;
+			children = (
+				F2470E80219190E800FF75D2 /* AppDelegate.h */,
+				F2470E81219190E800FF75D2 /* AppDelegate.m */,
+				F2470E83219190E800FF75D2 /* ViewController.h */,
+				F2470E84219190E800FF75D2 /* ViewController.mm */,
+				F2470E86219190E800FF75D2 /* Main.storyboard */,
+				F2470E89219190E900FF75D2 /* Assets.xcassets */,
+				F2470E8B219190E900FF75D2 /* LaunchScreen.storyboard */,
+				F2470E8E219190E900FF75D2 /* Info.plist */,
+				F2470E8F219190E900FF75D2 /* main.m */,
+			);
+			path = NEONTest;
+			sourceTree = "<group>";
+		};
+		F2470E98219190E900FF75D2 /* NEONTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2470E99219190E900FF75D2 /* NEONTestTests.m */,
+				F2470E9B219190E900FF75D2 /* Info.plist */,
+			);
+			path = NEONTestTests;
+			sourceTree = "<group>";
+		};
+		F2470EA3219190E900FF75D2 /* NEONTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2470EA4219190E900FF75D2 /* NEONTestUITests.m */,
+				F2470EA6219190E900FF75D2 /* Info.plist */,
+			);
+			path = NEONTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2470E7C219190E800FF75D2 /* NEONTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2470EA9219190E900FF75D2 /* Build configuration list for PBXNativeTarget "NEONTest" */;
+			buildPhases = (
+				F2470E79219190E800FF75D2 /* Sources */,
+				F2470E7A219190E800FF75D2 /* Frameworks */,
+				F2470E7B219190E800FF75D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NEONTest;
+			productName = NEONTest;
+			productReference = F2470E7D219190E800FF75D2 /* NEONTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2470E94219190E900FF75D2 /* NEONTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2470EAC219190E900FF75D2 /* Build configuration list for PBXNativeTarget "NEONTestTests" */;
+			buildPhases = (
+				F2470E91219190E900FF75D2 /* Sources */,
+				F2470E92219190E900FF75D2 /* Frameworks */,
+				F2470E93219190E900FF75D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2470E97219190E900FF75D2 /* PBXTargetDependency */,
+			);
+			name = NEONTestTests;
+			productName = NEONTestTests;
+			productReference = F2470E95219190E900FF75D2 /* NEONTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2470E9F219190E900FF75D2 /* NEONTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2470EAF219190E900FF75D2 /* Build configuration list for PBXNativeTarget "NEONTestUITests" */;
+			buildPhases = (
+				F2470E9C219190E900FF75D2 /* Sources */,
+				F2470E9D219190E900FF75D2 /* Frameworks */,
+				F2470E9E219190E900FF75D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2470EA2219190E900FF75D2 /* PBXTargetDependency */,
+			);
+			name = NEONTestUITests;
+			productName = NEONTestUITests;
+			productReference = F2470EA0219190E900FF75D2 /* NEONTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2470E75219190E800FF75D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "杨一凡";
+				TargetAttributes = {
+					F2470E7C219190E800FF75D2 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					F2470E94219190E900FF75D2 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = F2470E7C219190E800FF75D2;
+					};
+					F2470E9F219190E900FF75D2 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = F2470E7C219190E800FF75D2;
+					};
+				};
+			};
+			buildConfigurationList = F2470E78219190E800FF75D2 /* Build configuration list for PBXProject "NEONTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2470E74219190E800FF75D2;
+			productRefGroup = F2470E7E219190E800FF75D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2470E7C219190E800FF75D2 /* NEONTest */,
+				F2470E94219190E900FF75D2 /* NEONTestTests */,
+				F2470E9F219190E900FF75D2 /* NEONTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2470E7B219190E800FF75D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2470E8D219190E900FF75D2 /* LaunchScreen.storyboard in Resources */,
+				F2470E8A219190E900FF75D2 /* Assets.xcassets in Resources */,
+				F2470E88219190E800FF75D2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2470E93219190E900FF75D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2470E9E219190E900FF75D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2470E79219190E800FF75D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8368489623D43DCD00EE3E40 /* NeonTest200119.cpp in Sources */,
+				F2470E85219190E800FF75D2 /* ViewController.mm in Sources */,
+				F2470E90219190E900FF75D2 /* main.m in Sources */,
+				F2470E82219190E800FF75D2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2470E91219190E900FF75D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2470E9A219190E900FF75D2 /* NEONTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2470E9C219190E900FF75D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2470EA5219190E900FF75D2 /* NEONTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2470E97219190E900FF75D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2470E7C219190E800FF75D2 /* NEONTest */;
+			targetProxy = F2470E96219190E900FF75D2 /* PBXContainerItemProxy */;
+		};
+		F2470EA2219190E900FF75D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2470E7C219190E800FF75D2 /* NEONTest */;
+			targetProxy = F2470EA1219190E900FF75D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2470E86219190E800FF75D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2470E87219190E800FF75D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2470E8B219190E900FF75D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2470E8C219190E900FF75D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2470EA7219190E900FF75D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F2470EA8219190E900FF75D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2470EAA219190E900FF75D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KFM65GB3;
+				INFOPLIST_FILE = NEONTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.NEONTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2470EAB219190E900FF75D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KFM65GB3;
+				INFOPLIST_FILE = NEONTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.NEONTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F2470EAD219190E900FF75D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KFM65GB3;
+				INFOPLIST_FILE = NEONTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.NEONTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NEONTest.app/NEONTest";
+			};
+			name = Debug;
+		};
+		F2470EAE219190E900FF75D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KFM65GB3;
+				INFOPLIST_FILE = NEONTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.NEONTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NEONTest.app/NEONTest";
+			};
+			name = Release;
+		};
+		F2470EB0219190E900FF75D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KFM65GB3;
+				INFOPLIST_FILE = NEONTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.NEONTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NEONTest;
+			};
+			name = Debug;
+		};
+		F2470EB1219190E900FF75D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KFM65GB3;
+				INFOPLIST_FILE = NEONTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.NEONTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NEONTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2470E78219190E800FF75D2 /* Build configuration list for PBXProject "NEONTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2470EA7219190E900FF75D2 /* Debug */,
+				F2470EA8219190E900FF75D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2470EA9219190E900FF75D2 /* Build configuration list for PBXNativeTarget "NEONTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2470EAA219190E900FF75D2 /* Debug */,
+				F2470EAB219190E900FF75D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2470EAC219190E900FF75D2 /* Build configuration list for PBXNativeTarget "NEONTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2470EAD219190E900FF75D2 /* Debug */,
+				F2470EAE219190E900FF75D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2470EAF219190E900FF75D2 /* Build configuration list for PBXNativeTarget "NEONTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2470EB0219190E900FF75D2 /* Debug */,
+				F2470EB1219190E900FF75D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2470E75219190E800FF75D2 /* Project object */;
+}
