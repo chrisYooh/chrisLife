@@ -1,10 +1,3 @@
-CC=gcc
-
-SRC_DIR := ./
-SUBMOULE_DIR := ./submodule
-INCLUDE_DIR := ./include
-BUILD_DIR := ./build
-
 CC      = gcc
 CPP     = g++
 RM      = rm -rf
@@ -52,7 +45,9 @@ LDFLAGS += $(foreach lib, $(LIBS), -l$(lib))
 explain:
 	@echo "此篇为Makefile的基本使用说明，真正的Makefile一般放置在源文件同级目录中"
 	@echo "执行 make demo_print 查看基本信息示例"
-	@echo "移步 ../0_src 执行真实的demo make"
+	@echo "执行 make all 进行编译"
+	@echo "执行 make test 测试结果"
+	@echo "执行 make clean 清理编译"
 	
 # 打印变量信息
 demo_print:
@@ -76,15 +71,16 @@ demo_print:
 	@echo $(CC) $(CFLAGS) -o $(TARGET) $(OBJS) $(LDFLAGS)
 	@echo $(RM) $(OBJS)
 
-# 准备编译目录
-prepare:
-	rm -rf ${BUILD_DIR}
-	mkdir ${BUILD_DIR}
+all:
+	cp ./Makefile_src ../0_src/Makefile
+	cp ./Makefile_submodule ../0_src/submodule/Makefile
+	cd ../0_src && make all
+	cp ../0_src/main ./
+	./main
 	
-# 编译 submodule
-sm:
-	${CC} ${SUBMOULE_DIR}/submodule.c \
-	-c \
-	-I ${INCLUDE_DIR} \
-	-o ${BUILD_DIR}/submodule.o
+clean:
+	cd ../0_src && make clean
 	
+	rm -rf ../0_src/Makefile
+	rm -rf ../0_src/submodule/Makefile
+	rm -rf ./main

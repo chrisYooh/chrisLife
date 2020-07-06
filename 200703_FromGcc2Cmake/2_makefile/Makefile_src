@@ -1,9 +1,10 @@
 INCLUDE_PATH := ./include
 SRCS += $(wildcard ./*.c)
-OBJS += $(wildcard ./*.o)
+OBJS += $(SRCS:.c=.o)
 
-SUB_DIR := ./submodule
-SUB_OBJS := $(wildcard ${SUB_DIR}/*.o)
+SUB_DIR = ./submodule
+SUB_SRCS = $(wildcard ${SUB_DIR}/*.c)
+SUB_OBJS += $(SUB_SRCS:.c=.o)
 
 TARGET := main
 
