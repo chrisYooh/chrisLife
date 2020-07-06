@@ -1,0 +1,23 @@
+INCLUDE_PATH := ./include
+SRCS += $(wildcard ./*.c)
+OBJS += $(wildcard ./*.o)
+
+SUB_DIR := ./submodule
+SUB_OBJS := $(wildcard ${SUB_DIR}/*.o)
+
+TARGET := main
+
+all: clean build linkobjs
+	
+linkobjs:
+	gcc ${OBJS} ${SUB_OBJS} -o ${TARGET}
+	
+build:
+	cd ${SUB_DIR} && make build
+	gcc -c ${SRCS} -I${INCLUDE_PATH}
+	
+clean:
+	cd ${SUB_DIR} && make clean
+	rm -rf ${OBJS}
+	rm -rf ${TARGET}
+

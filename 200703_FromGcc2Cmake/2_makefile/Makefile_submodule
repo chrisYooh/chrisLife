@@ -1,0 +1,12 @@
+INCLUDE_PATH := ../include
+SRCS += $(wildcard ./*.c)
+OBJS += $(wildcard ./*.o)
+
+all: clean build
+
+build:
+	gcc -c ${SRCS} -I${INCLUDE_PATH}
+
+clean:
+	rm -rf ${OBJS}
+
