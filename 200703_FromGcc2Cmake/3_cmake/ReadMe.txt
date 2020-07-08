@@ -32,3 +32,4 @@ set()
 list()
 install()
 
+Cmake install()
