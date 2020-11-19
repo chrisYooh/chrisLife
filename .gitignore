@@ -1,12 +1,16 @@
-19年8月27日 MNN转模型调试工具/MNN
 project.xcworkspace
 xcshareddata
 xcuserdata
 __pycache__
 
-20年5月17日 AI_Class/1_MNIST
-20年5月17日 AI_Class/2_Dataset/someTrainImages
-20年5月17日 AI_Class/2_Dataset/someTestImages
-20年5月17日 AI_Class/5_Training/Milestone
-20年5月17日 AI_Class/6_ModelTrans/model.onnx
+Pods
+Podfile.lock
+
+
+/19年8月27日 MNN转模型调试工具/MNN
+/20年5月17日 AI_Class/1_MNIST
+/20年5月17日 AI_Class/2_Dataset/someTrainImages
+/20年5月17日 AI_Class/2_Dataset/someTestImages
+/20年5月17日 AI_Class/5_Training/Milestone
+/20年5月17日 AI_Class/6_ModelTrans/model.onnx
 
