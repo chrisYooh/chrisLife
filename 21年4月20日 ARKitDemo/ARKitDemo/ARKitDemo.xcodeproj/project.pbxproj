@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		837669A726228E0D0099C720 /* SCNNode+CYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 837669A626228E0D0099C720 /* SCNNode+CYTools.m */; };
+		83766A652622964B0099C720 /* ARSCNView+CYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 83766A642622964B0099C720 /* ARSCNView+CYTools.m */; };
+		83766A692622975A0099C720 /* ARWorldTrackingConfiguration+CYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 83766A682622975A0099C720 /* ARWorldTrackingConfiguration+CYTools.m */; };
+		83766A972622A7620099C720 /* CYItemOperateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83766A8F2622A7620099C720 /* CYItemOperateViewController.m */; };
+		83766A982622A7620099C720 /* CYItemOperatePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 83766A922622A7620099C720 /* CYItemOperatePresenter.m */; };
+		83766A992622A7620099C720 /* CYItemOperateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83766A952622A7620099C720 /* CYItemOperateView.m */; };
+		83766AA92622AC0D0099C720 /* CYItemOpSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83766AA82622AC0D0099C720 /* CYItemOpSliderView.m */; };
+		83766AAE2622D4200099C720 /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 83766AAD2622D4200099C720 /* chair_swan.usdz */; };
+		83766AB32622E4FF0099C720 /* CYShootingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83766AB22622E4FF0099C720 /* CYShootingViewController.m */; };
+		83766ABB2622E55C0099C720 /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 83766AB82622E55C0099C720 /* Bullet.m */; };
+		83766ABC2622E55C0099C720 /* Ship.m in Sources */ = {isa = PBXBuildFile; fileRef = 83766AB92622E55C0099C720 /* Ship.m */; };
+		83766AC82622F91F0099C720 /* CYImageDetectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83766AC72622F91F0099C720 /* CYImageDetectViewController.m */; };
+		83B404FD2616EFA1006B9402 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B404FC2616EFA1006B9402 /* AppDelegate.m */; };
+		83B405032616EFA1006B9402 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B405022616EFA1006B9402 /* ViewController.m */; };
+		83B405062616EFA1006B9402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B405042616EFA1006B9402 /* Main.storyboard */; };
+		83B405082616EFA3006B9402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B405072616EFA3006B9402 /* Assets.xcassets */; };
+		83B4050B2616EFA3006B9402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B405092616EFA3006B9402 /* LaunchScreen.storyboard */; };
+		83B4050E2616EFA3006B9402 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B4050D2616EFA3006B9402 /* main.m */; };
+		83B4075126175D4A006B9402 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B4075026175D4A006B9402 /* art.scnassets */; };
+		897451E419D893BD03E37742 /* libPods-ARKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF8CF46AF36B903C23C5DF5 /* libPods-ARKitDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1ED8468A8F9E58F61E3E4896 /* Pods-ARKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-ARKitDemo/Pods-ARKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4BF8CF46AF36B903C23C5DF5 /* libPods-ARKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ARKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		837669A526228E0D0099C720 /* SCNNode+CYTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCNNode+CYTools.h"; sourceTree = "<group>"; };
+		837669A626228E0D0099C720 /* SCNNode+CYTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCNNode+CYTools.m"; sourceTree = "<group>"; };
+		83766A632622964B0099C720 /* ARSCNView+CYTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARSCNView+CYTools.h"; sourceTree = "<group>"; };
+		83766A642622964B0099C720 /* ARSCNView+CYTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ARSCNView+CYTools.m"; sourceTree = "<group>"; };
+		83766A672622975A0099C720 /* ARWorldTrackingConfiguration+CYTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARWorldTrackingConfiguration+CYTools.h"; sourceTree = "<group>"; };
+		83766A682622975A0099C720 /* ARWorldTrackingConfiguration+CYTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ARWorldTrackingConfiguration+CYTools.m"; sourceTree = "<group>"; };
+		83766A8D2622A70D0099C720 /* CYTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYTools.h; sourceTree = "<group>"; };
+		83766A8F2622A7620099C720 /* CYItemOperateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYItemOperateViewController.m; sourceTree = "<group>"; };
+		83766A912622A7620099C720 /* CYItemOperatePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYItemOperatePresenter.h; sourceTree = "<group>"; };
+		83766A922622A7620099C720 /* CYItemOperatePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYItemOperatePresenter.m; sourceTree = "<group>"; };
+		83766A932622A7620099C720 /* CYItemOperateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYItemOperateViewController.h; sourceTree = "<group>"; };
+		83766A952622A7620099C720 /* CYItemOperateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYItemOperateView.m; sourceTree = "<group>"; };
+		83766A962622A7620099C720 /* CYItemOperateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYItemOperateView.h; sourceTree = "<group>"; };
+		83766AA52622AB870099C720 /* ARKitDemo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARKitDemo.pch; sourceTree = "<group>"; };
+		83766AA72622AC0D0099C720 /* CYItemOpSliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYItemOpSliderView.h; sourceTree = "<group>"; };
+		83766AA82622AC0D0099C720 /* CYItemOpSliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYItemOpSliderView.m; sourceTree = "<group>"; };
+		83766AAD2622D4200099C720 /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
+		83766AB12622E4FF0099C720 /* CYShootingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYShootingViewController.h; sourceTree = "<group>"; };
+		83766AB22622E4FF0099C720 /* CYShootingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYShootingViewController.m; sourceTree = "<group>"; };
+		83766AB72622E55C0099C720 /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
+		83766AB82622E55C0099C720 /* Bullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bullet.m; sourceTree = "<group>"; };
+		83766AB92622E55C0099C720 /* Ship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ship.m; sourceTree = "<group>"; };
+		83766ABA2622E55C0099C720 /* Ship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ship.h; sourceTree = "<group>"; };
+		83766AC62622F91F0099C720 /* CYImageDetectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYImageDetectViewController.h; sourceTree = "<group>"; };
+		83766AC72622F91F0099C720 /* CYImageDetectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYImageDetectViewController.m; sourceTree = "<group>"; };
+		83B404F82616EFA1006B9402 /* ARKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B404FB2616EFA1006B9402 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		83B404FC2616EFA1006B9402 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		83B405012616EFA1006B9402 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		83B405022616EFA1006B9402 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		83B405052616EFA1006B9402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83B405072616EFA3006B9402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83B4050A2616EFA3006B9402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83B4050C2616EFA3006B9402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B4050D2616EFA3006B9402 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83B4075026175D4A006B9402 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		A7D16E8DB313A1F91C2722E3 /* Pods-ARKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARKitDemo.release.xcconfig"; path = "Target Support Files/Pods-ARKitDemo/Pods-ARKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83B404F52616EFA1006B9402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897451E419D893BD03E37742 /* libPods-ARKitDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DDBAF52B507D875F0B5867B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1ED8468A8F9E58F61E3E4896 /* Pods-ARKitDemo.debug.xcconfig */,
+				A7D16E8DB313A1F91C2722E3 /* Pods-ARKitDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8376699F26228C300099C720 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				83766A8D2622A70D0099C720 /* CYTools.h */,
+				837669A526228E0D0099C720 /* SCNNode+CYTools.h */,
+				837669A626228E0D0099C720 /* SCNNode+CYTools.m */,
+				83766A632622964B0099C720 /* ARSCNView+CYTools.h */,
+				83766A642622964B0099C720 /* ARSCNView+CYTools.m */,
+				83766A672622975A0099C720 /* ARWorldTrackingConfiguration+CYTools.h */,
+				83766A682622975A0099C720 /* ARWorldTrackingConfiguration+CYTools.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		83766A842622A5EA0099C720 /* TestVcs */ = {
+			isa = PBXGroup;
+			children = (
+				83766AC52622F8FE0099C720 /* CYImageDetectVc */,
+				83766AB02622E4BE0099C720 /* CYShootingVc */,
+				83766A8E2622A7620099C720 /* CYItemOperateVc */,
+			);
+			path = TestVcs;
+			sourceTree = "<group>";
+		};
+		83766A8E2622A7620099C720 /* CYItemOperateVc */ = {
+			isa = PBXGroup;
+			children = (
+				83766A932622A7620099C720 /* CYItemOperateViewController.h */,
+				83766A8F2622A7620099C720 /* CYItemOperateViewController.m */,
+				8376699F26228C300099C720 /* Tools */,
+				83766A902622A7620099C720 /* Presenter */,
+				83766A942622A7620099C720 /* Views */,
+			);
+			path = CYItemOperateVc;
+			sourceTree = "<group>";
+		};
+		83766A902622A7620099C720 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				83766A912622A7620099C720 /* CYItemOperatePresenter.h */,
+				83766A922622A7620099C720 /* CYItemOperatePresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		83766A942622A7620099C720 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83766A962622A7620099C720 /* CYItemOperateView.h */,
+				83766A952622A7620099C720 /* CYItemOperateView.m */,
+				83766AA72622AC0D0099C720 /* CYItemOpSliderView.h */,
+				83766AA82622AC0D0099C720 /* CYItemOpSliderView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		83766AB02622E4BE0099C720 /* CYShootingVc */ = {
+			isa = PBXGroup;
+			children = (
+				83766AB12622E4FF0099C720 /* CYShootingViewController.h */,
+				83766AB22622E4FF0099C720 /* CYShootingViewController.m */,
+				83766AB62622E54B0099C720 /* CustomNodes */,
+			);
+			path = CYShootingVc;
+			sourceTree = "<group>";
+		};
+		83766AB62622E54B0099C720 /* CustomNodes */ = {
+			isa = PBXGroup;
+			children = (
+				83766AB72622E55C0099C720 /* Bullet.h */,
+				83766AB82622E55C0099C720 /* Bullet.m */,
+				83766ABA2622E55C0099C720 /* Ship.h */,
+				83766AB92622E55C0099C720 /* Ship.m */,
+			);
+			path = CustomNodes;
+			sourceTree = "<group>";
+		};
+		83766AC52622F8FE0099C720 /* CYImageDetectVc */ = {
+			isa = PBXGroup;
+			children = (
+				83766AC62622F91F0099C720 /* CYImageDetectViewController.h */,
+				83766AC72622F91F0099C720 /* CYImageDetectViewController.m */,
+			);
+			path = CYImageDetectVc;
+			sourceTree = "<group>";
+		};
+		83B404EF2616EFA1006B9402 = {
+			isa = PBXGroup;
+			children = (
+				83766A842622A5EA0099C720 /* TestVcs */,
+				83B404FA2616EFA1006B9402 /* ARKitDemo */,
+				83B404F92616EFA1006B9402 /* Products */,
+				3DDBAF52B507D875F0B5867B /* Pods */,
+				A4C1D6B071FE9239CEC97C9E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83B404F92616EFA1006B9402 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83B404F82616EFA1006B9402 /* ARKitDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83B404FA2616EFA1006B9402 /* ARKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				83766AAD2622D4200099C720 /* chair_swan.usdz */,
+				83766AA52622AB870099C720 /* ARKitDemo.pch */,
+				83B4075026175D4A006B9402 /* art.scnassets */,
+				83B404FB2616EFA1006B9402 /* AppDelegate.h */,
+				83B404FC2616EFA1006B9402 /* AppDelegate.m */,
+				83B405012616EFA1006B9402 /* ViewController.h */,
+				83B405022616EFA1006B9402 /* ViewController.m */,
+				83B405042616EFA1006B9402 /* Main.storyboard */,
+				83B405072616EFA3006B9402 /* Assets.xcassets */,
+				83B405092616EFA3006B9402 /* LaunchScreen.storyboard */,
+				83B4050C2616EFA3006B9402 /* Info.plist */,
+				83B4050D2616EFA3006B9402 /* main.m */,
+			);
+			path = ARKitDemo;
+			sourceTree = "<group>";
+		};
+		A4C1D6B071FE9239CEC97C9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BF8CF46AF36B903C23C5DF5 /* libPods-ARKitDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83B404F72616EFA1006B9402 /* ARKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83B405112616EFA3006B9402 /* Build configuration list for PBXNativeTarget "ARKitDemo" */;
+			buildPhases = (
+				4C5C85BD7A266DF2822E57F0 /* [CP] Check Pods Manifest.lock */,
+				83B404F42616EFA1006B9402 /* Sources */,
+				83B404F52616EFA1006B9402 /* Frameworks */,
+				83B404F62616EFA1006B9402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARKitDemo;
+			productName = ARKitDemo;
+			productReference = 83B404F82616EFA1006B9402 /* ARKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83B404F02616EFA1006B9402 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					83B404F72616EFA1006B9402 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 83B404F32616EFA1006B9402 /* Build configuration list for PBXProject "ARKitDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83B404EF2616EFA1006B9402;
+			productRefGroup = 83B404F92616EFA1006B9402 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83B404F72616EFA1006B9402 /* ARKitDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83B404F62616EFA1006B9402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B4050B2616EFA3006B9402 /* LaunchScreen.storyboard in Resources */,
+				83B4075126175D4A006B9402 /* art.scnassets in Resources */,
+				83B405082616EFA3006B9402 /* Assets.xcassets in Resources */,
+				83766AAE2622D4200099C720 /* chair_swan.usdz in Resources */,
+				83B405062616EFA1006B9402 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C5C85BD7A266DF2822E57F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83B404F42616EFA1006B9402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83766ABC2622E55C0099C720 /* Ship.m in Sources */,
+				83B405032616EFA1006B9402 /* ViewController.m in Sources */,
+				83766A972622A7620099C720 /* CYItemOperateViewController.m in Sources */,
+				83766A982622A7620099C720 /* CYItemOperatePresenter.m in Sources */,
+				83766AB32622E4FF0099C720 /* CYShootingViewController.m in Sources */,
+				83766AA92622AC0D0099C720 /* CYItemOpSliderView.m in Sources */,
+				83B404FD2616EFA1006B9402 /* AppDelegate.m in Sources */,
+				83766A652622964B0099C720 /* ARSCNView+CYTools.m in Sources */,
+				83766A692622975A0099C720 /* ARWorldTrackingConfiguration+CYTools.m in Sources */,
+				83B4050E2616EFA3006B9402 /* main.m in Sources */,
+				83766A992622A7620099C720 /* CYItemOperateView.m in Sources */,
+				83766AC82622F91F0099C720 /* CYImageDetectViewController.m in Sources */,
+				837669A726228E0D0099C720 /* SCNNode+CYTools.m in Sources */,
+				83766ABB2622E55C0099C720 /* Bullet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		83B405042616EFA1006B9402 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83B405052616EFA1006B9402 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83B405092616EFA3006B9402 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83B4050A2616EFA3006B9402 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83B4050F2616EFA3006B9402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83B405102616EFA3006B9402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83B405122616EFA3006B9402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ED8468A8F9E58F61E3E4896 /* Pods-ARKitDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KFM65GB3;
+				GCC_PREFIX_HEADER = ARKitDemo/ARKitDemo.pch;
+				INFOPLIST_FILE = ARKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.ARKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83B405132616EFA3006B9402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7D16E8DB313A1F91C2722E3 /* Pods-ARKitDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KFM65GB3;
+				GCC_PREFIX_HEADER = ARKitDemo/ARKitDemo.pch;
+				INFOPLIST_FILE = ARKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.ARKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83B404F32616EFA1006B9402 /* Build configuration list for PBXProject "ARKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B4050F2616EFA3006B9402 /* Debug */,
+				83B405102616EFA3006B9402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83B405112616EFA3006B9402 /* Build configuration list for PBXNativeTarget "ARKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B405122616EFA3006B9402 /* Debug */,
+				83B405132616EFA3006B9402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83B404F02616EFA1006B9402 /* Project object */;
+}

@@ -1,0 +1,10 @@
+platform :ios, '10.0'
+
+target 'TestPAG' do
+    pod 'libpag', '3.2.7.19'
+    pod 'Masonry', '1.1.0'
+    pod 'CYToolkit', :path => '/Users/chris/Documents/WorkingCopys/GitHub/CYToolkit'
+    
+    pod 'SoSwiftLottieBridge',  :git => 'git@code.soulapp-inc.cn:soul_ios/soswiftlottiebridge.git', :branch => 'alpha'
+    pod 'lottie-ios',  '3.2.1'
+end

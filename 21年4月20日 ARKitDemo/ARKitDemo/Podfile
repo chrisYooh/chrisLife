@@ -1,0 +1,9 @@
+
+platform :ios, '10.0'
+
+target 'ARKitDemo' do  
+  pod 'CYToolkit', :path => '/Users/chris/Documents/WorkingCopys/GitHub/CYToolkit'
+  pod 'YYCategories'
+  pod 'Masonry', '1.1.0'
+end
+
