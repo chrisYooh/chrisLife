@@ -4,12 +4,12 @@ class BKHouseItem:
 
     type = "二手房"  # 类型：二手房/
     region = "" # 区域，如：静安
-    price = ""  # 房屋价格，如：1150万
+    price = 0  # 房屋价格，如：1150，单位：万
     houseType = ""  # 户型，如：3室1厅
-    houseSize = ""  # 房子大小，如：147.47m²
+    houseSize = 0  # 房子大小，如：147.47，单位：m²
     houseOrientation = "" # 朝向，如：南 北
     houseCommunity = "" # 小区
-    unitPrice = ""  # 每平单价，如：77,982元/平
+    unitPrice = 0  # 每平单价，如：77,982，单位：元/平
     houseName = ""  # 房子名称，如：内环内地铁口+04年电梯房+东边套全明+70年产权
     houseSummary = ""  # 房子概述，如：3室1厅/147.47m²/南 北/博苑公寓
     houseMainTags = ""  # 房子关键标签
@@ -43,12 +43,12 @@ class BKHouseItem:
         self.houseSummary = dataDic["desc"]
         infoList = self.houseSummary.split("/")
         self.houseType = infoList[0]
-        self.houseSize = infoList[1]
+        self.houseSize = float(infoList[1].replace("m²", ""))
         self.houseOrientation = infoList[2]
         self.houseCommunity = infoList[3]
 
-        self.price = dataDic["totalPrice"]
-        self.unitPrice = dataDic["unitPrice"]
+        self.price = int(dataDic["totalPrice"].replace("万", ""))
+        self.unitPrice = float(dataDic["unitPrice"].replace("元/平", "").replace(",", ""))
         self.houseName = dataDic["title"]
 
 

@@ -36,6 +36,11 @@ class BKSpider:
             tmpHouse.setUp(tmpDataDic, "二手房", "静安")
             self.houseList.append(tmpHouse)
 
+        # 信息排序（大小 > 总价 > 单价）
+        self.houseList.sort(key=lambda houseItem: houseItem.price, reverse=False)
+        self.houseList.sort(key=lambda houseItem: houseItem.houseSize, reverse=True)
+        self.houseList.sort(key=lambda houseItem: houseItem.unitPrice, reverse=False)
+
         # 输出信息
         self.writeHouseCsvFile(self.outPath, self.houseList, "房源列表_静安二手房")
 
@@ -46,16 +51,16 @@ class BKSpider:
         f = open(file_path, 'w')
 
         # 写标题
-        f.write("区域,户型,大小,总价,平方价,朝向,小区,关键标签,房名,详情链接,概述\n")
+        f.write("区域,户型,平方价,总价,大小,朝向,小区,关键标签,房名,详情链接,概述\n")
 
         # 写内容
         for tmpItem in itemList:
             itemStr = ("\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"" % (
                 tmpItem.region,
                 tmpItem.houseType,
-                tmpItem.houseSize,
-                tmpItem.price,
-                tmpItem.unitPrice,
+                str(tmpItem.unitPrice) + "元/平",
+                str(tmpItem.price) + "万",
+                str(tmpItem.houseSize) + "m²",                                
                 tmpItem.houseOrientation,
                 tmpItem.houseCommunity,
                 tmpItem.houseMainTags,
