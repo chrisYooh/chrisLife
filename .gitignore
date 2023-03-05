@@ -5,6 +5,7 @@ __pycache__
 
 Pods
 Podfile.lock
+.idea
 
 
 /19年8月27日 MNN转模型调试工具/MNN
@@ -13,4 +14,5 @@ Podfile.lock
 /20年5月17日 AI_Class/2_Dataset/someTestImages
 /20年5月17日 AI_Class/5_Training/Milestone
 /20年5月17日 AI_Class/6_ModelTrans/model.onnx
+/22年3月3日 BK爬虫/output_BK
 
