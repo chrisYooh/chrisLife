@@ -46,20 +46,22 @@ class BKSpider:
         f = open(file_path, 'w')
 
         # 写标题
-        f.write("类型,区域,房屋大小,总价,平方价,房名,概述,关键标签,详情链接\n")
+        f.write("区域,户型,大小,总价,平方价,朝向,小区,关键标签,房名,详情链接,概述\n")
 
         # 写内容
         for tmpItem in itemList:
-            itemStr = ("\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"" % (
-                tmpItem.type,
+            itemStr = ("\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"" % (
                 tmpItem.region,
-                "待抽离",
+                tmpItem.houseType,
+                tmpItem.houseSize,
                 tmpItem.price,
                 tmpItem.unitPrice,
-                tmpItem.houseName,
-                tmpItem.houseSummary,
+                tmpItem.houseOrientation,
+                tmpItem.houseCommunity,
                 tmpItem.houseMainTags,
-                tmpItem.detailUrl
+                tmpItem.houseName,
+                tmpItem.detailUrl,
+                tmpItem.houseSummary
             ))
             f.write(itemStr + "\n")
 

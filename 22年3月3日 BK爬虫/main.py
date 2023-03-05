@@ -19,6 +19,8 @@ if __name__ == '__main__':
     bkSpider = BKSpider.BKSpider(outPath)
     bkSpider.process()
 
+    print("处理完成")
+
     # 当前 & 7日前时间戳
     # BaseConfig.curTimestamp = int(time.time())
     # BaseConfig.sevenDayBeforeTimestamp = BaseConfig.curTimestamp - 3600 * 24 * 7
@@ -53,4 +55,4 @@ if __name__ == '__main__':
     # except Exception as e:
     #     logging.exception(e)
     #
-    # print("处理完成")
+
