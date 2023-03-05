@@ -16,6 +16,9 @@ class BKSpider:
     # 房源列表
     houseList = []
 
+    # 关注列表
+    concernList = []
+
     def __init__(self, outPath):
         self.requests = requests.Session()
         self.outPath = outPath
@@ -41,8 +44,23 @@ class BKSpider:
         self.houseList.sort(key=lambda houseItem: houseItem.houseSize, reverse=True)
         self.houseList.sort(key=lambda houseItem: houseItem.unitPrice, reverse=False)
 
+        # 抽取关注信息
+        self.concernList = self.extractConcernList(self.houseList)
+
         # 输出信息
         self.writeHouseCsvFile(self.outPath, self.houseList, "房源列表_静安二手房")
+        self.writeHouseCsvFile(self.outPath, self.concernList, "房源列表_静安关注")
+
+    def extractConcernList(self, itemList):
+
+        tmpList = []
+        for tmpItem in itemList:
+            if tmpItem.price < 600 or tmpItem.price > 800:
+                continue
+            if tmpItem.houseSize < 60:
+                continue
+            tmpList.append(tmpItem)
+        return tmpList
 
     def writeHouseCsvFile(self, basePath, itemList, fileName):
 
@@ -60,7 +78,7 @@ class BKSpider:
                 tmpItem.houseType,
                 str(tmpItem.unitPrice) + "元/平",
                 str(tmpItem.price) + "万",
-                str(tmpItem.houseSize) + "m²",                                
+                str(tmpItem.houseSize) + "m²",
                 tmpItem.houseOrientation,
                 tmpItem.houseCommunity,
                 tmpItem.houseMainTags,
