@@ -2,9 +2,8 @@
 
 # 抓取洞察卡顿数据，快速整理需要的讯息
 import os
-import logging
+import shutil
 import sys
-import time
 import BKSpider.BKSpider as BKSpider
 
 outPath = sys.path[0].strip() + "/output_BK/"
@@ -12,9 +11,9 @@ outPath = sys.path[0].strip() + "/output_BK/"
 if __name__ == '__main__':
 
     # 创建输出目录
-    if False == os.path.exists(outPath):
-        os.mkdir(outPath)
-
+    if os.path.exists(outPath):
+        shutil.rmtree(outPath)
+    os.mkdir(outPath)
 
     bkSpider = BKSpider.BKSpider(outPath)
     bkSpider.process()

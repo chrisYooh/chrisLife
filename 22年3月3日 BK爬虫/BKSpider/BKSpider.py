@@ -28,16 +28,14 @@ class BKSpider:
 
         # 请求基础信息
         print("Step1: 请求数据信息...")
-        response = self.requests.get(TemplateAPI.jingan_get, timeout=100, verify=False)
-        response_data = json.loads(response.text)
-        houseDataList = response_data["data"]["data"]["getErShouFangList"]["list"]
-
-        # 填充房源列表
-        print("Step2: 填充房源列表...")
-        for tmpDataDic in houseDataList:
-            tmpHouse = BKHouseItem.BKHouseItem()
-            tmpHouse.setUp(tmpDataDic, "二手房", "静安")
-            self.houseList.append(tmpHouse)
+        # 不加 %252F 时候筛选有问题，会选出不符合筛选条件的内容
+        areaArray = ["%252Fjingan%252F",
+                     "%252Fxuhui%252F",
+                     "%252Fhuangpu%252F",
+                     "%252Fputuo%252F"]
+        for tmpArea in areaArray:
+            tmpList = self.requestHouseList(tmpArea)
+            self.houseList.extend(tmpList)
 
         # 信息排序（大小 > 总价 > 单价）
         self.houseList.sort(key=lambda houseItem: houseItem.price, reverse=False)
@@ -50,6 +48,44 @@ class BKSpider:
         # 输出信息
         self.writeHouseCsvFile(self.outPath, self.houseList, "房源列表_静安二手房")
         self.writeHouseCsvFile(self.outPath, self.concernList, "房源列表_静安关注")
+
+    def requestHouseList(self, inputArea):
+
+        itemList = []
+        tmpPage = 1
+        while True:
+            tmpUrl = (TemplateAPI.houstListUrl % {'inputArea': inputArea, "inputPage":str(tmpPage) })
+            response = self.requests.get(tmpUrl, timeout=10, verify=False)
+            # response_data = json.loads(response.text)
+            # if response_data['code'] != 200:
+            #     print("数据请求出错")
+            #     return
+
+            # 模型话列表信息
+            response_data = json.loads(response.text)
+            houseDataList = response_data["data"]["data"]["getErShouFangList"]["list"]
+            tmpItemList = self.houstListFromDataList(houseDataList, inputArea)
+            itemList.extend(tmpItemList)
+
+            # 循环请求迭代
+            print("完成请求 第 %d 页数据, 共计 %d 条" % (tmpPage, len(tmpItemList)))
+
+            tmpPage = tmpPage + 1;
+            if len(tmpItemList) == 0:
+                break
+            if tmpPage > 50:
+                break
+
+        return itemList
+
+    def houstListFromDataList(self, dataList, area):
+
+        tmpList = []
+        for tmpDataDic in dataList:
+            tmpHouse = BKHouseItem.BKHouseItem()
+            tmpHouse.setUp(tmpDataDic, "二手房", area)
+            tmpList.append(tmpHouse)
+        return tmpList
 
     def extractConcernList(self, itemList):
 
@@ -69,11 +105,12 @@ class BKSpider:
         f = open(file_path, 'w')
 
         # 写标题
-        f.write("区域,户型,平方价,总价,大小,朝向,小区,关键标签,房名,详情链接,概述\n")
+        f.write("状态,区域,户型,平方价,总价,大小,朝向,小区,关键标签,房名,详情链接,概述\n")
 
         # 写内容
         for tmpItem in itemList:
-            itemStr = ("\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"" % (
+            itemStr = ("%s,\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"" % (
+                tmpItem.houseStatus,
                 tmpItem.region,
                 tmpItem.houseType,
                 str(tmpItem.unitPrice) + "元/平",

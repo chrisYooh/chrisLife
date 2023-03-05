@@ -37,6 +37,15 @@ class BKHouseItem:
 
     def setUp(self, dataDic, houseType, region):
 
+        if "jingan" in region:
+            region = "静安"
+        elif "huangpu" in region:
+            region = "黄浦"
+        elif "xuhui" in region:
+            region = "徐汇"
+        elif "putuo" in region:
+            region = "普陀"
+
         self.type = houseType
         self.region = region
 
@@ -47,7 +56,7 @@ class BKHouseItem:
         self.houseOrientation = infoList[2]
         self.houseCommunity = infoList[3]
 
-        self.price = int(dataDic["totalPrice"].replace("万", ""))
+        self.price = float(dataDic["totalPrice"].replace("万", ""))
         self.unitPrice = float(dataDic["unitPrice"].replace("元/平", "").replace(",", ""))
         self.houseName = dataDic["title"]
 
